@@ -28,22 +28,140 @@ namespace WindowsFormsApplication16
 
         private void weekEvents(object sender, EventArgs e)
         { 
-        if(sender==button1)
-            button10.Size = new Size(button10.Width, button10.Height + 5);
-        else if(sender==button2) 
-             button10.Size = new Size(button10.Width ,button10.Height -5);
-        else if(sender==button3)
-             button10.Size = new Size( button10.Width-5,button10.Height );
-        else if(sender==button4)
-             button10.Size = new Size(button10.Width+5,button10.Height  );
-        else if(sender==button5)
-             button10.Location = new Point(button10.Left, button10.Top - 5);
-        else if(sender==button6)
-            button10.Location = new Point(button10.Left, button10.Top + 5);
-        else if(sender==button7)
-            button10.Location = new Point(button10.Left - 5, button10.Top);
-        else if(sender==button8)
-            button10.Location = new Point(button10.Left + 5, button10.Top);
+         foreach (var button in new[] { button1, button2, button3, button4, button5, button6, button7, button8 })
+            {
+                if (sender == button1)
+                    button.Size = new Size(button.Width, button.Height + 5);
+                else if (sender == button2)
+                    button.Size = new Size(button.Width, button.Height - 5);
+                else if (sender == button3)
+                    button.Size = new Size(button.Width - 5, button.Height);
+                else if (sender == button4)
+                    button.Size = new Size(button.Width + 5, button.Height);
+                else if (sender == button5)
+                    button.Location = new Point(button.Left, button.Top - 5);
+                 else if (sender == button6)
+                        button.Location = new Point(button.Left, button.Top + 5);
+                  else if (sender == button7)
+                        button.Location = new Point(button.Left - 5, button.Top);
+                 else if (sender == button8)
+                        button.Location = new Point(button.Left + 5, button.Top);
+                        }
+//طريفه اخري معقده شويه 
+                    //if (sender == button1)
+                    //{
+                    //    // button10.Size = new Size(button10.Width, button10.Height + 5);
+                    //    button1.Size = new Size(button1.Width, button1.Height + 5);
+                    //    button2.Size = new Size(button2.Width, button2.Height + 5);
+                    //    button3.Size = new Size(button3.Width, button3.Height + 5);
+                    //    button4.Size = new Size(button4.Width, button4.Height + 5);
+                    //    button5.Size = new Size(button5.Width, button5.Height + 5);
+                    //    button6.Size = new Size(button6.Width, button6.Height + 5);
+                    //    button7.Size = new Size(button7.Width, button7.Height + 5);
+                    //    button8.Size = new Size(button8.Width, button8.Height + 5);
+
+                    //}
+                    //else if (sender == button2)
+                    //{
+                    //    //button10.Size = new Size(button10.Width, button10.Height - 5);
+                    //    button1.Size = new Size(button1.Width, button1.Height - 5);
+                    //    button2.Size = new Size(button2.Width, button2.Height - 5);
+                    //    button3.Size = new Size(button3.Width, button3.Height - 5);
+                    //    button4.Size = new Size(button4.Width, button4.Height - 5);
+                    //    button5.Size = new Size(button5.Width, button5.Height - 5);
+                    //    button6.Size = new Size(button6.Width, button6.Height - 5);
+                    //    button7.Size = new Size(button7.Width, button7.Height - 5);
+                    //    button8.Size = new Size(button8.Width, button8.Height - 5);
+                    //}
+                    //else if (sender == button3)
+                    //{
+                    //   // button10.Size = new Size(button10.Width - 5, button10.Height);
+                    //    button1.Size = new Size(button1.Width-5, button1.Height );
+                    //    button2.Size = new Size(button2.Width-5, button2.Height );
+                    //    button3.Size = new Size(button3.Width-5, button3.Height );
+                    //    button4.Size = new Size(button4.Width-5, button4.Height );
+                    //    button5.Size = new Size(button5.Width-5, button5.Height );
+                    //    button6.Size = new Size(button6.Width-5, button6.Height );
+                    //    button7.Size = new Size(button7.Width-5, button7.Height );
+                    //    button8.Size = new Size(button8.Width-5, button8.Height );
+                    //}
+                    //else if (sender == button4)
+                    //{
+                    //  //  button10.Size = new Size(button10.Width + 5, button10.Height);
+                    //    button1.Size = new Size(button1.Width + 5, button1.Height);
+                    //    button2.Size = new Size(button2.Width + 5, button2.Height );
+                    //    button3.Size = new Size(button3.Width + 5, button3.Height );
+                    //    button4.Size = new Size(button4.Width + 5, button4.Height );
+                    //    button5.Size = new Size(button5.Width + 5, button5.Height );
+                    //    button6.Size = new Size(button6.Width + 5, button6.Height );
+                    //    button7.Size = new Size(button7.Width + 5, button7.Height );
+                    //    button8.Size = new Size(button8.Width + 5, button8.Height );
+                    //}
+                    //else if (sender == button5)
+                    //{
+                    //   // button10.Location = new Point(button10.Left, button10.Top - 5);
+                    //    button1.Location = new Point(button1.Left, button1.Top - 5);
+                    //    button2.Location = new Point(button2.Left, button2.Top - 5);
+                    //    button3.Location = new Point(button3.Left, button3.Top - 5);
+                    //    button4.Location = new Point(button4.Left, button4.Top - 5);
+                    //    button5.Location = new Point(button5.Left, button5.Top - 5);
+                    //    button6.Location = new Point(button6.Left, button6.Top - 5);
+                    //    button7.Location = new Point(button7.Left, button7.Top - 5);
+                    //    button8.Location = new Point(button8.Left, button8.Top - 5);
+                    //}
+                    //else if (sender == button6)
+                    //{
+                    //   // button10.Location = new Point(button10.Left, button10.Top + 5);
+                    //    button1.Location = new Point(button1.Left, button1.Top + 5);
+                    //    button2.Location = new Point(button2.Left, button2.Top + 5);
+                    //    button3.Location = new Point(button3.Left, button3.Top + 5);
+                    //    button4.Location = new Point(button4.Left, button4.Top + 5);
+                    //    button5.Location = new Point(button5.Left, button5.Top + 5);
+                    //    button6.Location = new Point(button6.Left, button6.Top + 5);
+                    //    button7.Location = new Point(button7.Left, button7.Top + 5);
+                    //    button8.Location = new Point(button8.Left, button8.Top + 5);
+                    //}
+                    //else if (sender == button7)
+                    //{
+                    //   // button10.Location = new Point(button10.Left - 5, button10.Top);
+                    //    button1.Location = new Point(button1.Left - 5, button1.Top);
+                    //    button2.Location = new Point(button2.Left - 5, button2.Top);
+                    //    button3.Location = new Point(button3.Left - 5, button3.Top);
+                    //    button4.Location = new Point(button4.Left - 5, button4.Top);
+                    //    button5.Location = new Point(button5.Left - 5, button5.Top);
+                    //    button6.Location = new Point(button6.Left - 5, button6.Top);
+                    //    button7.Location = new Point(button7.Left - 5, button7.Top);
+                    //    button8.Location = new Point(button8.Left - 5, button8.Top);
+                    //}
+                    //else if (sender == button8)
+                    //{
+                    //   // button10.Location = new Point(button10.Left + 5, button10.Top);
+                    //    button1.Location = new Point(button1.Left + 1, button1.Top);
+                    //    button2.Location = new Point(button2.Left + 5, button2.Top);
+                    //    button3.Location = new Point(button3.Left + 5, button3.Top);
+                    //    button4.Location = new Point(button4.Left + 5, button4.Top);
+                    //    button5.Location = new Point(button5.Left + 5, button5.Top);
+                    //    button6.Location = new Point(button6.Left + 5, button6.Top);
+                    //    button7.Location = new Point(button7.Left + 5, button7.Top);
+                    //    button8.Location = new Point(button8.Left + 5, button8.Top);
+                    //}
+                    //التنفيذ الاول تم الغائه من قبل الاستاذ
+       // if(sender==button1)
+       //      button10.Size = new Size(button10.Width, button10.Height + 5);
+       //  else if(sender==button2) 
+       //       button10.Size = new Size(button10.Width ,button10.Height -5);
+       //  else if(sender==button3)
+       //       button10.Size = new Size( button10.Width-5,button10.Height );
+       //  else if(sender==button4)
+       //       button10.Size = new Size(button10.Width+5,button10.Height  );
+       //  else if (sender==button5)
+       //       button10.Location = new Point(button10.Left, button10.Top - 5);
+       //  else if(sender==button6)
+       //      button10.Location = new Point(button10.Left, button10.Top + 5);
+       //  else if(sender==button7)
+       //      button10.Location = new Point(button10.Left - 5, button10.Top);
+       //  else if(sender==button8)
+       //      button10.Location = new Point(button10.Left + 5, button10.Top);
 
         }
         private void button1_Click(object sender, EventArgs e)
